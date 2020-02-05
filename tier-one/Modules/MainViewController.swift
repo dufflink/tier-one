@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  tier-one
 //
 //  Created by Maxim Skorynin on 05.02.2020.
@@ -8,13 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+final class MainViewController: TOViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        isFullScreen = true
     }
-
-
+    
 }
-
