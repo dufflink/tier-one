@@ -10,7 +10,7 @@ import UIKit
 
 class TOViewController: UIViewController {
     
-    // MARK: - UI Variables
+    // MARK: - UI Properties
     
     var isFullScreen = false {
         didSet {
@@ -38,10 +38,30 @@ class TOViewController: UIViewController {
     
     var navigationTitle: String? {
         get {
-            return navigationController?.navigationBar.topItem?.title
+            return navigationBar?.topItem?.title
         } set {
-            navigationController?.navigationBar.topItem?.title = newValue
+            navigationBar?.topItem?.title = newValue
             self.title = newValue
+        }
+    }
+    
+    var navigationBar: UINavigationBar? {
+        return navigationController?.navigationBar
+    }
+    
+    var leftBarButtonItem: UIBarButtonItem? {
+        get {
+            return navigationBar?.topItem?.leftBarButtonItem
+        } set {
+            navigationBar?.topItem?.leftBarButtonItem = newValue
+        }
+    }
+    
+    var rightBarButtonItem: UIBarButtonItem? {
+        get {
+            return navigationBar?.topItem?.rightBarButtonItem
+        } set {
+            navigationBar?.topItem?.rightBarButtonItem = newValue
         }
     }
     
@@ -73,7 +93,7 @@ class TOViewController: UIViewController {
     }
     
     private func hideShowNavigationBar() {
-        navigationController?.navigationBar.isHidden = isFullScreen
+        navigationBar?.isHidden = isFullScreen
     }
     
     private func configureBackBarButtonItem() {
@@ -83,8 +103,8 @@ class TOViewController: UIViewController {
     }
     
     private func setTitleSettings() {
-        navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: titleColor]
-        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: titleColor]
+        navigationBar?.largeTitleTextAttributes = [.foregroundColor: titleColor]
+        navigationBar?.titleTextAttributes = [.foregroundColor: titleColor]
     }
     
 }

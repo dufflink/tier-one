@@ -30,7 +30,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zpV-M3-3ML"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Новости" image="list.bullet.below.rectangle" catalog="system" id="oES-Nm-Jpa"/>
+                    <tabBarItem key="tabBarItem" title="Новости" image="trash" catalog="system" id="oES-Nm-Jpa"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XI1-5c-fqc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -39,6 +39,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="list.bullet.below.rectangle" catalog="system" width="64" height="56"/>
+        <image name="trash" catalog="system" width="60" height="64"/>
     </resources>
 </document>

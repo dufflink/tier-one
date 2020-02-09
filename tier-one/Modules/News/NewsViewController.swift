@@ -12,7 +12,6 @@ final class NewsViewController: TOViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     override func configure() {
