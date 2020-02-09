@@ -20,4 +20,24 @@ final class Navigation {
         return R.storyboard.main.mainViewController()!
     }
     
+    func getInitialViewController() -> UIViewController {
+        if LocaleStorage.shared.isAuthenticate {
+            return createTabBarViewController()
+        }
+        
+        return createStartingViewController()
+    }
+    
+    func createStartingViewController() -> StartingViewController {
+        return R.storyboard.main.startingViewController()!
+    }
+    
+    func createTabBarViewController() -> TabBarViewController {
+        return R.storyboard.tabs.tabBarViewController()!
+    }
+    
+    func createNewsViewController() -> NewsViewController {
+        return R.storyboard.news.newsViewController()!
+    }
+    
 }

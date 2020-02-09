@@ -26,6 +26,8 @@ final class Instance {
         }
         
         navigationController = UINavigationController()
+        navigationController.navigationBar.prefersLargeTitles = true
+        
         mainWindow.rootViewController = navigationController
     }
     

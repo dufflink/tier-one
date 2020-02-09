@@ -13,6 +13,12 @@
 		B0A39D3223EB234C00620F5B /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A39D3123EB234C00620F5B /* UIViewController.swift */; };
 		B0A39D3623EB292700620F5B /* TOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A39D3523EB292700620F5B /* TOViewController.swift */; };
 		B0A39D3823EB29D100620F5B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A39D3723EB29D100620F5B /* Constants.swift */; };
+		B0A39D3B23EEC5C400620F5B /* LocaleStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A39D3A23EEC5C400620F5B /* LocaleStorage.swift */; };
+		B0A39D3E23EEC6DA00620F5B /* StartingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A39D3D23EEC6DA00620F5B /* StartingViewController.swift */; };
+		B0A39D4023EEC79B00620F5B /* Tabs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0A39D3F23EEC79B00620F5B /* Tabs.storyboard */; };
+		B0A39D4223EEC7BA00620F5B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A39D4123EEC7BA00620F5B /* TabBarViewController.swift */; };
+		B0A39D4623EECAD700620F5B /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A39D4523EECAD700620F5B /* NewsViewController.swift */; };
+		B0A39D4823EECB2900620F5B /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0A39D4723EECB2900620F5B /* News.storyboard */; };
 		B0B9A02C23EB177B0078D88C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B9A02B23EB177B0078D88C /* AppDelegate.swift */; };
 		B0B9A03323EB177B0078D88C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B9A03123EB177B0078D88C /* Main.storyboard */; };
 		B0B9A03623EB177B0078D88C /* tier_one.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0B9A03423EB177B0078D88C /* tier_one.xcdatamodeld */; };
@@ -30,6 +36,12 @@
 		B0A39D3123EB234C00620F5B /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		B0A39D3523EB292700620F5B /* TOViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOViewController.swift; sourceTree = "<group>"; };
 		B0A39D3723EB29D100620F5B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B0A39D3A23EEC5C400620F5B /* LocaleStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleStorage.swift; sourceTree = "<group>"; };
+		B0A39D3D23EEC6DA00620F5B /* StartingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingViewController.swift; sourceTree = "<group>"; };
+		B0A39D3F23EEC79B00620F5B /* Tabs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabs.storyboard; sourceTree = "<group>"; };
+		B0A39D4123EEC7BA00620F5B /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		B0A39D4523EECAD700620F5B /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		B0A39D4723EECB2900620F5B /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
 		B0B9A02823EB177B0078D88C /* tier-one.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tier-one.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0B9A02B23EB177B0078D88C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0B9A03223EB177B0078D88C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,7 +86,8 @@
 		B0A39D2C23EB22A600620F5B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				B0A39D2D23EB22BA00620F5B /* MainViewController.swift */,
+				B0A39D4423EECAC600620F5B /* News */,
+				B0A39D4323EECA8800620F5B /* Main */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -111,6 +124,24 @@
 			path = TOViews;
 			sourceTree = "<group>";
 		};
+		B0A39D4323EECA8800620F5B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B0A39D2D23EB22BA00620F5B /* MainViewController.swift */,
+				B0A39D3D23EEC6DA00620F5B /* StartingViewController.swift */,
+				B0A39D4123EEC7BA00620F5B /* TabBarViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B0A39D4423EECAC600620F5B /* News */ = {
+			isa = PBXGroup;
+			children = (
+				B0A39D4523EECAD700620F5B /* NewsViewController.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
 		B0B9A01F23EB177B0078D88C = {
 			isa = PBXGroup;
 			children = (
@@ -134,8 +165,8 @@
 			children = (
 				B0B9A04523EB1A4F0078D88C /* Helper */,
 				B0A39D2C23EB22A600620F5B /* Modules */,
-				B0B9A04323EB18260078D88C /* Resources */,
 				B0A39D3323EB28F500620F5B /* Views */,
+				B0B9A04323EB18260078D88C /* Resources */,
 				B0B9A04223EB180D0078D88C /* Application */,
 			);
 			path = "tier-one";
@@ -165,7 +196,9 @@
 			isa = PBXGroup;
 			children = (
 				B0B9A03123EB177B0078D88C /* Main.storyboard */,
+				B0A39D3F23EEC79B00620F5B /* Tabs.storyboard */,
 				B0B9A03923EB177C0078D88C /* LaunchScreen.storyboard */,
+				B0A39D4723EECB2900620F5B /* News.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -175,6 +208,7 @@
 			children = (
 				B0A39D2F23EB233900620F5B /* Extensions */,
 				B0A39D2923EB21D100620F5B /* Navigation */,
+				B0A39D3A23EEC5C400620F5B /* LocaleStorage.swift */,
 				B0A39D3723EB29D100620F5B /* Constants.swift */,
 			);
 			path = Helper;
@@ -251,7 +285,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0A39D4023EEC79B00620F5B /* Tabs.storyboard in Resources */,
 				B0B9A03B23EB177C0078D88C /* LaunchScreen.storyboard in Resources */,
+				B0A39D4823EECB2900620F5B /* News.storyboard in Resources */,
 				B0B9A03823EB177C0078D88C /* Assets.xcassets in Resources */,
 				B0B9A03323EB177B0078D88C /* Main.storyboard in Resources */,
 			);
@@ -348,7 +384,11 @@
 				B0A39D2B23EB21E100620F5B /* Instance.swift in Sources */,
 				B0B9A02C23EB177B0078D88C /* AppDelegate.swift in Sources */,
 				B0A39D3623EB292700620F5B /* TOViewController.swift in Sources */,
+				B0A39D4223EEC7BA00620F5B /* TabBarViewController.swift in Sources */,
+				B0A39D3E23EEC6DA00620F5B /* StartingViewController.swift in Sources */,
+				B0A39D4623EECAD700620F5B /* NewsViewController.swift in Sources */,
 				B0A39D2723EB1EFE00620F5B /* R.generated.swift in Sources */,
+				B0A39D3B23EEC5C400620F5B /* LocaleStorage.swift in Sources */,
 				B0A39D2E23EB22BA00620F5B /* MainViewController.swift in Sources */,
 				B0B9A03623EB177B0078D88C /* tier_one.xcdatamodeld in Sources */,
 				B0B9A04723EB1A5A0078D88C /* Navigation.swift in Sources */,

@@ -24,7 +24,7 @@ class TOViewController: UIViewController {
         }
     }
     
-    var titleColor: UIColor = .black {
+    var titleColor: UIColor = #colorLiteral(red: 0.1568627451, green: 0.1568627451, blue: 0.1568627451, alpha: 1) {
         didSet {
             setTitleSettings()
         }
@@ -36,17 +36,34 @@ class TOViewController: UIViewController {
         }
     }
     
+    var navigationTitle: String? {
+        get {
+            return navigationController?.navigationBar.topItem?.title
+        } set {
+            navigationController?.navigationBar.topItem?.title = newValue
+            self.title = newValue
+        }
+    }
+    
     // MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureBackBarButtonItem()
-        setNeedsStatusBarAppearanceUpdate()
+        configure()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         print("Warning! Did recieve memory warning [TOViewController]")
+    }
+    
+    // MARK: - Public Functions
+    
+    func configure() {
+        configureBackBarButtonItem()
+        setNeedsStatusBarAppearanceUpdate()
+        
+        setTitleSettings()
     }
     
     // MARK: - Private Functions

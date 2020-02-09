@@ -13,6 +13,14 @@ final class MainViewController: TOViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         isFullScreen = true
+        
+        pushToNextViewController()
+    }
+    
+    // MARK: - Public Functions
+    
+    private func pushToNextViewController() {
+        Navigation.shared.getInitialViewController().push(clearBackStack: true)
     }
     
 }

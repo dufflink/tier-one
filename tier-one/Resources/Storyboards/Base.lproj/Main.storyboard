@@ -21,7 +21,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="138"/>
+            <point key="canvasLocation" x="107" y="163"/>
+        </scene>
+        <!--Starting View Controller-->
+        <scene sceneID="gi7-7R-gPa">
+            <objects>
+                <viewController storyboardIdentifier="StartingViewController" id="ES8-ty-aCX" customClass="StartingViewController" customModule="tier_one" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Rq-wJ-1a1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6o-30-bJ4">
+                                <rect key="frame" x="173" y="433" width="68" height="30"/>
+                                <state key="normal" title="Go to app"/>
+                                <connections>
+                                    <action selector="buttonDidPress:" destination="ES8-ty-aCX" eventType="touchUpInside" id="Huo-XE-CJj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="e6o-30-bJ4" firstAttribute="centerY" secondItem="0Rq-wJ-1a1" secondAttribute="centerY" id="7nL-i2-9SP"/>
+                            <constraint firstItem="e6o-30-bJ4" firstAttribute="centerX" secondItem="0Rq-wJ-1a1" secondAttribute="centerX" id="OLn-kz-XgI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TZd-TI-FVr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g0Z-GT-xyE" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="874" y="163"/>
         </scene>
     </scenes>
 </document>

@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.9.1)
+  - KeychainAccess (4.1.0)
   - Moya (13.0.1):
     - Moya/Core (= 13.0.1)
   - Moya/Core (13.0.1):
@@ -12,6 +13,7 @@ PODS:
   - SwiftLint (0.38.2)
 
 DEPENDENCIES:
+  - KeychainAccess
   - Moya
   - R.swift
   - SwiftLint
@@ -19,6 +21,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - KeychainAccess
     - Moya
     - R.swift
     - R.swift.Library
@@ -27,12 +30,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  KeychainAccess: 445e28864fe6d3458b41fa211bcdc39890e8bd5a
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   R.swift: 8cbc4fc69b740305b6a17c8a8ed968eb788962d9
   R.swift.Library: fa85ce1e0d0b7e818cd9e080df910ba54d2776cc
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   SwiftLint: 8f5d2f903e1c9bcbc832fd16771e80a263ac6cbb
 
-PODFILE CHECKSUM: 878ba39599418928626687a34456586bd6823d2d
+PODFILE CHECKSUM: 82c928b460749e81d038887abd6ba10723696a6e
 
 COCOAPODS: 1.8.4
