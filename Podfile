@@ -10,5 +10,7 @@ target 'tier-one' do
   
   pod 'R.swift'
   pod 'SwiftLint'
+  
+  pod "Kingfisher"
 
 end

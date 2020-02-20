@@ -29,14 +29,11 @@
         <scene sceneID="ZoG-OL-wk0">
             <objects>
                 <viewControllerPlaceholder storyboardName="News" referencedIdentifier="NewsViewController" id="0QQ-9w-Vis" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Новости" image="list.bullet.below.rectangle" catalog="system" id="dXv-aH-xa9"/>
+                    <tabBarItem key="tabBarItem" title="Новости" id="dXv-aH-xa9"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Phk-oj-Xx7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-983" y="474"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="list.bullet.below.rectangle" catalog="system" width="64" height="56"/>
-    </resources>
 </document>
