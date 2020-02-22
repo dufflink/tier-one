@@ -72,6 +72,14 @@ import UIKit
         }
     }
     
+    @IBInspectable var circleShape: Bool {
+        get {
+            return cornersRadius == frame.height / 2
+        } set {
+            cornersRadius = newValue ? frame.height / 2 : 0
+        }
+    }
+    
     // MARK: - Delegating Functions
     
     func getParentNib() -> UINib? {

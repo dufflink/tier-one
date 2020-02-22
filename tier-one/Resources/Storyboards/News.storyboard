@@ -19,14 +19,24 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GE3-Cc-amT">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionView key="tableHeaderView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="9On-xc-G3r" customClass="DisciplineCollectionView" customModule="tier_one" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="100" id="XDW-G4-mJp"/>
+                                    </constraints>
+                                    <collectionViewLayout key="collectionViewLayout" id="Kmj-3R-1ya"/>
+                                    <cells/>
+                                </collectionView>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="GE3-Cc-amT" firstAttribute="bottom" secondItem="zpV-M3-3ML" secondAttribute="bottom" id="5gB-Aa-EiN"/>
                             <constraint firstItem="GE3-Cc-amT" firstAttribute="leading" secondItem="zpV-M3-3ML" secondAttribute="leading" id="IrD-Lw-ws3"/>
-                            <constraint firstItem="GE3-Cc-amT" firstAttribute="top" secondItem="zpV-M3-3ML" secondAttribute="top" id="NuY-9r-kne"/>
-                            <constraint firstItem="GE3-Cc-amT" firstAttribute="bottom" secondItem="zpV-M3-3ML" secondAttribute="bottom" id="cCL-0s-6Le"/>
                             <constraint firstItem="GE3-Cc-amT" firstAttribute="trailing" secondItem="zpV-M3-3ML" secondAttribute="trailing" id="fkL-Q6-BEc"/>
+                            <constraint firstItem="GE3-Cc-amT" firstAttribute="top" secondItem="zpV-M3-3ML" secondAttribute="top" id="mVB-eS-RHv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zpV-M3-3ML"/>
                     </view>

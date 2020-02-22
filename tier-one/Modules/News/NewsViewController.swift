@@ -16,7 +16,6 @@ final class NewsViewController: TOViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         configureTable()
     }
     
@@ -25,6 +24,8 @@ final class NewsViewController: TOViewController {
         isFullScreen = false
         navigationTitle = "Новости"
     }
+    
+    // MARK: - Private Functions
     
     private func configureTable() {
         tableView.delegate = self
@@ -35,6 +36,8 @@ final class NewsViewController: TOViewController {
     
 }
 
+// MARK: - TableView Delegate
+
 extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -42,7 +45,7 @@ extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let row = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.newsRow.identifier, for: indexPath) as? NewsRow else {
+        guard let row = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.newsRow, for: indexPath) else {
             return UITableViewCell()
         }
         

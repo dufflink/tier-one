@@ -14,6 +14,10 @@
 		B04FB4FB23FEF8A9002D5B61 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FB4FA23FEF8A9002D5B61 /* News.swift */; };
 		B04FB4FD23FEF9AD002D5B61 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FB4FC23FEF9AD002D5B61 /* NewsModel.swift */; };
 		B04FB4FF23FEFDCF002D5B61 /* NewsImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FB4FE23FEFDCF002D5B61 /* NewsImageView.swift */; };
+		B04FB50124003955002D5B61 /* DisciplineRow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04FB50024003955002D5B61 /* DisciplineRow.xib */; };
+		B04FB50324012728002D5B61 /* DisciplineRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FB50224012728002D5B61 /* DisciplineRow.swift */; };
+		B04FB505240127D3002D5B61 /* Discipline.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FB504240127D3002D5B61 /* Discipline.swift */; };
+		B04FB50A240131F9002D5B61 /* DisciplineCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FB509240131F9002D5B61 /* DisciplineCollectionView.swift */; };
 		B0A39D2723EB1EFE00620F5B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A39D2623EB1EFE00620F5B /* R.generated.swift */; };
 		B0A39D2B23EB21E100620F5B /* Instance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A39D2A23EB21E100620F5B /* Instance.swift */; };
 		B0A39D2E23EB22BA00620F5B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A39D2D23EB22BA00620F5B /* MainViewController.swift */; };
@@ -44,6 +48,10 @@
 		B04FB4FA23FEF8A9002D5B61 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		B04FB4FC23FEF9AD002D5B61 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		B04FB4FE23FEFDCF002D5B61 /* NewsImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsImageView.swift; sourceTree = "<group>"; };
+		B04FB50024003955002D5B61 /* DisciplineRow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisciplineRow.xib; sourceTree = "<group>"; };
+		B04FB50224012728002D5B61 /* DisciplineRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisciplineRow.swift; sourceTree = "<group>"; };
+		B04FB504240127D3002D5B61 /* Discipline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discipline.swift; sourceTree = "<group>"; };
+		B04FB509240131F9002D5B61 /* DisciplineCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisciplineCollectionView.swift; sourceTree = "<group>"; };
 		B0A39D2623EB1EFE00620F5B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		B0A39D2A23EB21E100620F5B /* Instance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instance.swift; sourceTree = "<group>"; };
 		B0A39D2D23EB22BA00620F5B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +101,8 @@
 			children = (
 				B04FB4F123FEF1E8002D5B61 /* NewsRow.xib */,
 				B04FB4F723FEF71A002D5B61 /* NewsRow.swift */,
+				B04FB50024003955002D5B61 /* DisciplineRow.xib */,
+				B04FB50224012728002D5B61 /* DisciplineRow.swift */,
 			);
 			path = Rows;
 			sourceTree = "<group>";
@@ -100,6 +110,7 @@
 		B04FB4F923FEF899002D5B61 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B04FB504240127D3002D5B61 /* Discipline.swift */,
 				B04FB4FA23FEF8A9002D5B61 /* News.swift */,
 			);
 			path = Models;
@@ -174,6 +185,7 @@
 			children = (
 				B0A39D4523EECAD700620F5B /* NewsViewController.swift */,
 				B04FB4FC23FEF9AD002D5B61 /* NewsModel.swift */,
+				B04FB509240131F9002D5B61 /* DisciplineCollectionView.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -325,6 +337,7 @@
 				B0A39D4023EEC79B00620F5B /* Tabs.storyboard in Resources */,
 				B04FB4F223FEF1E8002D5B61 /* NewsRow.xib in Resources */,
 				B0B9A03B23EB177C0078D88C /* LaunchScreen.storyboard in Resources */,
+				B04FB50124003955002D5B61 /* DisciplineRow.xib in Resources */,
 				B0A39D4823EECB2900620F5B /* News.storyboard in Resources */,
 				B0B9A03823EB177C0078D88C /* Assets.xcassets in Resources */,
 				B0B9A03323EB177B0078D88C /* Main.storyboard in Resources */,
@@ -423,17 +436,20 @@
 				B0B9A02C23EB177B0078D88C /* AppDelegate.swift in Sources */,
 				B0A39D3623EB292700620F5B /* TOViewController.swift in Sources */,
 				B0A39D4223EEC7BA00620F5B /* TabBarViewController.swift in Sources */,
+				B04FB50324012728002D5B61 /* DisciplineRow.swift in Sources */,
 				B0A39D3E23EEC6DA00620F5B /* StartingViewController.swift in Sources */,
 				B0A39D4623EECAD700620F5B /* NewsViewController.swift in Sources */,
 				B0A39D2723EB1EFE00620F5B /* R.generated.swift in Sources */,
 				B04FB4FF23FEFDCF002D5B61 /* NewsImageView.swift in Sources */,
 				B0A39D3B23EEC5C400620F5B /* LocaleStorage.swift in Sources */,
 				B0A39D2E23EB22BA00620F5B /* MainViewController.swift in Sources */,
+				B04FB50A240131F9002D5B61 /* DisciplineCollectionView.swift in Sources */,
 				B0B9A03623EB177B0078D88C /* tier_one.xcdatamodeld in Sources */,
 				B04FB4F423FEF249002D5B61 /* TOView.swift in Sources */,
 				B04FB4FD23FEF9AD002D5B61 /* NewsModel.swift in Sources */,
 				B04FB4F623FEF271002D5B61 /* CGColor.swift in Sources */,
 				B04FB4FB23FEF8A9002D5B61 /* News.swift in Sources */,
+				B04FB505240127D3002D5B61 /* Discipline.swift in Sources */,
 				B04FB4F823FEF71A002D5B61 /* NewsRow.swift in Sources */,
 				B0B9A04723EB1A5A0078D88C /* Navigation.swift in Sources */,
 				B0A39D3823EB29D100620F5B /* Constants.swift in Sources */,

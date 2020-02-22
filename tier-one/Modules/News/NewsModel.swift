@@ -10,9 +10,13 @@ final class NewsModel {
     
     var news: [News] = []
     
+    // MARK: - Life Cycle
+    
     init() {
         configure()
     }
+    
+    // MARK: - Public Functions
     
     func configure() {
         let news1 = News(pictureLink: "https://techrocks.ru/wp-content/uploads/2017/08/cybersport.jpg", title: "Lorem ipsum dolor sit amet, consect sel for…", subtitle: "Lorem ipsum dolor sit amet, consect sel for…", date: "12.04.2020")

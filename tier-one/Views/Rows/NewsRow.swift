@@ -12,8 +12,11 @@ final class NewsRow: UITableViewCell {
     
     @IBOutlet weak private var pictureView: NewsImageView!
     @IBOutlet weak private var titleView: UILabel!
+    
     @IBOutlet weak private var subtitleView: UILabel!
     @IBOutlet weak private var dateView: UILabel!
+    
+    // MARK: - Public Functions
     
     func configure(from model: News) {
         titleView.text = model.title
