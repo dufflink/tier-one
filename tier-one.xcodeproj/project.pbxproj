@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B03A88D02413AE8200C5D6FE /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03A88CF2413AE8200C5D6FE /* UIView.swift */; };
 		B04FB4F223FEF1E8002D5B61 /* NewsRow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04FB4F123FEF1E8002D5B61 /* NewsRow.xib */; };
 		B04FB4F423FEF249002D5B61 /* TOView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FB4F323FEF249002D5B61 /* TOView.swift */; };
 		B04FB4F623FEF271002D5B61 /* CGColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FB4F523FEF271002D5B61 /* CGColor.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		39F9A54122F8E2737A8A0089 /* Pods_tier_one.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tier_one.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B03A88CF2413AE8200C5D6FE /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		B04FB4F123FEF1E8002D5B61 /* NewsRow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsRow.xib; sourceTree = "<group>"; };
 		B04FB4F323FEF249002D5B61 /* TOView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOView.swift; sourceTree = "<group>"; };
 		B04FB4F523FEF271002D5B61 /* CGColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGColor.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 			children = (
 				B0A39D3123EB234C00620F5B /* UIViewController.swift */,
 				B04FB4F523FEF271002D5B61 /* CGColor.swift */,
+				B03A88CF2413AE8200C5D6FE /* UIView.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				B0A39D4223EEC7BA00620F5B /* TabBarViewController.swift in Sources */,
 				B04FB50324012728002D5B61 /* DisciplineRow.swift in Sources */,
 				B0A39D3E23EEC6DA00620F5B /* StartingViewController.swift in Sources */,
+				B03A88D02413AE8200C5D6FE /* UIView.swift in Sources */,
 				B0A39D4623EECAD700620F5B /* NewsViewController.swift in Sources */,
 				B0A39D2723EB1EFE00620F5B /* R.generated.swift in Sources */,
 				B04FB4FF23FEFDCF002D5B61 /* NewsImageView.swift in Sources */,
@@ -605,7 +609,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.maximskorynin.tier-one";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "tier-one";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -624,7 +628,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.maximskorynin.tier-one";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "tier-one";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

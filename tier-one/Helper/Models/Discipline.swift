@@ -8,19 +8,19 @@
 
 import UIKit
 
-enum Discipline: CaseIterable {
+enum Discipline: String, CaseIterable {
     
-    case dota
-    case counterStrike
+    case dota = "Dota 2"
+    case counterStrike = "Counter-Strike"
     
-    case quake
-    case lol
+    case quake = "Quake"
+    case lol = "Leage of legends"
     
-    case war3
-    case pubg
+    case war3 = "Warcraft 3"
+    case pubg = "PUBG"
     
-    case formula
-    case apex
+    case formula = "Formula 1"
+    case apex = "Apex legends"
     
     // MARK: - Properties
     
