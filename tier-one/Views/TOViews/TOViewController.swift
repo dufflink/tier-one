@@ -41,7 +41,7 @@ class TOViewController: UIViewController {
             return navigationBar?.topItem?.title
         } set {
             navigationBar?.topItem?.title = newValue
-            self.title = newValue
+            title = newValue
         }
     }
     

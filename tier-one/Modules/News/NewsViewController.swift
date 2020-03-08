@@ -55,4 +55,10 @@ extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
         return row
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let newsModel = model.news[indexPath.row]
+        let controller = Navigation.shared.createDetailNewsViewController(with: newsModel)
+        controller.push(clearBackStack: false)
+    }
+    
 }

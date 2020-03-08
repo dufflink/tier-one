@@ -12,7 +12,7 @@
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="newsRow" rowHeight="453" id="847-TZ-LS9" customClass="NewsRow" customModule="tier_one" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="385" height="453"/>
             <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="847-TZ-LS9" id="txX-A1-zBe">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="847-TZ-LS9" id="txX-A1-zBe">
                 <rect key="frame" x="0.0" y="0.0" width="385" height="453"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>

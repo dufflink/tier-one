@@ -40,4 +40,11 @@ final class Navigation {
         return R.storyboard.news.newsViewController()!
     }
     
+    func createDetailNewsViewController(with model: News) -> DetailNewsViewController {
+        let viewController = R.storyboard.news.detailNewsViewController()!
+        viewController.model = DetailNewsModel(news: model)
+        
+        return viewController
+    }
+    
 }
