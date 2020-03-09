@@ -20,12 +20,4 @@ struct Constants {
         return UIScreen.main.bounds.height
     }()
     
-    let defaultStatusBarStyle: UIStatusBarStyle = {
-        guard #available(iOS 13, *) else {
-            return .default
-        }
-        
-        return .lightContent
-    }()
-    
 }

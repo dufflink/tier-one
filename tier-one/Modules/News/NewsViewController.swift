@@ -14,6 +14,13 @@ final class NewsViewController: TOViewController {
     
     private let model = NewsModel()
     
+    // MARK: - Life Cycle
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        isFullScreen = false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTable()
@@ -21,7 +28,6 @@ final class NewsViewController: TOViewController {
     
     override func configure() {
         super.configure()
-        isFullScreen = false
         navigationTitle = "Новости"
     }
     

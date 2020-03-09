@@ -23,7 +23,6 @@ final class DetailNewsViewController: TOViewController {
     
     override func configure() {
         super.configure()
-        title = "Новость"
         isLargeTitle = false
         
         pictureView.setImage(from: model.newsInfo.pictureLink)
@@ -34,6 +33,12 @@ final class DetailNewsViewController: TOViewController {
         
         authorView.text = "Автор: @duff"
         sourceLinkView.text = "tierone.com"
+    }
+    
+    // MARK: - IBAction Functions
+    
+    @IBAction func closeButtonDidPress(_ sender: Any) {
+        popBack()
     }
     
 }

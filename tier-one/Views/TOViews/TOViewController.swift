@@ -18,13 +18,7 @@ class TOViewController: UIViewController {
         }
     }
     
-    var statusBarStyle: UIStatusBarStyle = Constants.shared.defaultStatusBarStyle {
-        didSet {
-            setNeedsStatusBarAppearanceUpdate()
-        }
-    }
-    
-    var titleColor: UIColor = #colorLiteral(red: 0.1568627451, green: 0.1568627451, blue: 0.1568627451, alpha: 1) {
+    var titleColor: UIColor = .white {
         didSet {
             setTitleSettings()
         }

@@ -13,7 +13,7 @@ final class Instance {
     static let shared = Instance()
     
     let mainWindow: UIWindow
-    let navigationController: UINavigationController
+    let navigationController: TONavigationController
     
     // MARK: - Life Cycle
     
@@ -25,9 +25,7 @@ final class Instance {
             mainWindow.overrideUserInterfaceStyle = .light
         }
         
-        navigationController = UINavigationController()
-        navigationController.navigationBar.prefersLargeTitles = true
-        
+        navigationController = TONavigationController()
         mainWindow.rootViewController = navigationController
     }
     

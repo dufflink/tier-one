@@ -39,6 +39,7 @@
 		B0B9A03823EB177C0078D88C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0B9A03723EB177C0078D88C /* Assets.xcassets */; };
 		B0B9A03B23EB177C0078D88C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B9A03923EB177C0078D88C /* LaunchScreen.storyboard */; };
 		B0B9A04723EB1A5A0078D88C /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B9A04623EB1A5A0078D88C /* Navigation.swift */; };
+		B0CE12E2241657FA00536923 /* TONavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CE12E1241657FA00536923 /* TONavigationController.swift */; };
 		E953ACFDE4ABA76AE22E72A8 /* Pods_tier_one.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F9A54122F8E2737A8A0089 /* Pods_tier_one.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,7 @@
 		B0B9A03A23EB177C0078D88C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0B9A03C23EB177C0078D88C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0B9A04623EB1A5A0078D88C /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		B0CE12E1241657FA00536923 /* TONavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TONavigationController.swift; sourceTree = "<group>"; };
 		C132FED9F3DECD3DC795891D /* Pods-tier-one.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tier-one.debug.xcconfig"; path = "Target Support Files/Pods-tier-one/Pods-tier-one.debug.xcconfig"; sourceTree = "<group>"; };
 		DE7720BDECD1DC45F33728B1 /* Pods-tier-one.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tier-one.release.xcconfig"; path = "Target Support Files/Pods-tier-one/Pods-tier-one.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -183,6 +185,7 @@
 				B0A39D3523EB292700620F5B /* TOViewController.swift */,
 				B04FB4F323FEF249002D5B61 /* TOView.swift */,
 				B04FB4FE23FEFDCF002D5B61 /* NewsImageView.swift */,
+				B0CE12E1241657FA00536923 /* TONavigationController.swift */,
 			);
 			path = TOViews;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 				B0A39D3623EB292700620F5B /* TOViewController.swift in Sources */,
 				B0A39D4223EEC7BA00620F5B /* TabBarViewController.swift in Sources */,
 				B04FB50324012728002D5B61 /* DisciplineRow.swift in Sources */,
+				B0CE12E2241657FA00536923 /* TONavigationController.swift in Sources */,
 				B0A39D3E23EEC6DA00620F5B /* StartingViewController.swift in Sources */,
 				B03A88D02413AE8200C5D6FE /* UIView.swift in Sources */,
 				B0A39D4623EECAD700620F5B /* NewsViewController.swift in Sources */,
