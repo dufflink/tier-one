@@ -67,4 +67,29 @@ extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
         controller.push(clearBackStack: false)
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let disciplineCollectionView = DisciplineCollectionView()
+        disciplineCollectionView.itemsDelegate = self
+        
+        return disciplineCollectionView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 80
+    }
+    
 }
+
+// MARK: - DisciplineCollectionView Delegate
+
+extension NewsViewController: DisciplineCollectionViewDelegate {
+    
+    func didSelect(item: Discipline) {
+        
+    }
+    
+} 

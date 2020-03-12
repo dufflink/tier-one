@@ -25,6 +25,13 @@ final class DisciplineCollectionView: UICollectionView {
         return items[currentSelectedIndex]
     }
     
+    convenience init() {
+        self.init(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+        
+        configureCollectionView()
+        configureFlowLayout()
+    }
+    
     // MARK: - Life Cycle
     
     override func awakeFromNib() {
@@ -41,6 +48,11 @@ final class DisciplineCollectionView: UICollectionView {
         
         register(UINib(resource: R.nib.disciplineRow), forCellWithReuseIdentifier: R.nib.disciplineRow.identifier)
         contentInset = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 8)
+        
+        showsHorizontalScrollIndicator = false
+        showsVerticalScrollIndicator = false
+        
+        backgroundColor = #colorLiteral(red: 0.1882352941, green: 0.1882352941, blue: 0.1882352941, alpha: 1)
     }
     
     private func configureFlowLayout() {
@@ -88,7 +100,7 @@ extension DisciplineCollectionView: UICollectionViewDataSource, UICollectionView
 extension DisciplineCollectionView: UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 88, height: 88)
+        return CGSize(width: 70, height: 70)
     }
 
 }

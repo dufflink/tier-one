@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,23 +12,23 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="disciplineRow" id="9js-zE-9xq" customClass="DisciplineRow" customModule="tier_one" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="88" height="88"/>
+            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yDd-za-iHK">
-                <rect key="frame" x="0.0" y="0.0" width="88" height="88"/>
+                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IRz-YC-Aoo" userLabel="Body View" customClass="TOView" customModule="tier_one" customModuleProvider="target">
-                        <rect key="frame" x="4" y="4" width="80" height="80"/>
+                        <rect key="frame" x="4" y="4" width="62" height="62"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1n-uZ-FKB" userLabel="Literal View">
-                                <rect key="frame" x="26" y="16" width="28.5" height="48"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1n-uZ-FKB" userLabel="Literal View">
+                                <rect key="frame" x="8.5" y="11.5" width="45" height="39.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
                                 <color key="textColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="Second Color"/>
                         <constraints>
                             <constraint firstItem="X1n-uZ-FKB" firstAttribute="centerX" secondItem="IRz-YC-Aoo" secondAttribute="centerX" id="QrI-qy-qVC"/>
                             <constraint firstItem="X1n-uZ-FKB" firstAttribute="centerY" secondItem="IRz-YC-Aoo" secondAttribute="centerY" id="nk2-0K-rky"/>
@@ -35,13 +36,13 @@
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="circleShape" value="YES"/>
                             <userDefinedRuntimeAttribute type="number" keyPath="shadowAlpha">
-                                <real key="value" value="1.3999999999999999"/>
+                                <real key="value" value="0.0"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                <size key="value" width="0.0" height="1"/>
+                                <size key="value" width="0.0" height="0.0"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                <real key="value" value="2"/>
+                                <real key="value" value="0.0"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
                                 <color key="value" red="0.71119791666666665" green="0.71119791666666665" blue="0.71119791666666665" alpha="0.804844648" colorSpace="custom" customColorSpace="sRGB"/>
@@ -64,4 +65,9 @@
             <point key="canvasLocation" x="-218.84057971014494" y="-14.0625"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <namedColor name="Second Color">
+            <color red="0.22745098039215686" green="0.22745098039215686" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

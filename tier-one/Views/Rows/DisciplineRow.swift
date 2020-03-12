@@ -30,11 +30,11 @@ final class DisciplineRow: UICollectionViewCell {
     }
     
     func setSelected() {
-        bodyView.backgroundColor = model.color
+        bodyView.backgroundColor = #colorLiteral(red: 0.8533854167, green: 0.7588012525, blue: 0.1035696216, alpha: 1)
     }
     
     func setDeselected() {
-        bodyView.backgroundColor = #colorLiteral(red: 0.9176470588, green: 0.9176470588, blue: 0.9176470588, alpha: 1)
+        bodyView.backgroundColor = #colorLiteral(red: 0.2859058415, green: 0.2859058415, blue: 0.2859058415, alpha: 1)
     }
     
 }
