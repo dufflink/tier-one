@@ -42,7 +42,7 @@
 		B0CE12E2241657FA00536923 /* TONavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CE12E1241657FA00536923 /* TONavigationController.swift */; };
 		B0CE12E6241A9B3C00536923 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CE12E5241A9B3C00536923 /* API.swift */; };
 		B0CE12E8241A9B5600536923 /* API.Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CE12E7241A9B5600536923 /* API.Method.swift */; };
-		B0CE12EB241A9D5700536923 /* AuthorizeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CE12EA241A9D5700536923 /* AuthorizeRequest.swift */; };
+		B0CE12EB241A9D5700536923 /* AuthorizeAPIBayesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CE12EA241A9D5700536923 /* AuthorizeAPIBayesRequest.swift */; };
 		B0CE12EE241A9FAA00536923 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CE12ED241A9FAA00536923 /* Promise.swift */; };
 		B0CE12F0241AA01A00536923 /* API.Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CE12EF241AA01A00536923 /* API.Error.swift */; };
 		B0CE12F2241AA0B100536923 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CE12F1241AA0B100536923 /* Empty.swift */; };
@@ -88,7 +88,7 @@
 		B0CE12E1241657FA00536923 /* TONavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TONavigationController.swift; sourceTree = "<group>"; };
 		B0CE12E5241A9B3C00536923 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		B0CE12E7241A9B5600536923 /* API.Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.Method.swift; sourceTree = "<group>"; };
-		B0CE12EA241A9D5700536923 /* AuthorizeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizeRequest.swift; sourceTree = "<group>"; };
+		B0CE12EA241A9D5700536923 /* AuthorizeAPIBayesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizeAPIBayesRequest.swift; sourceTree = "<group>"; };
 		B0CE12ED241A9FAA00536923 /* Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
 		B0CE12EF241AA01A00536923 /* API.Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.Error.swift; sourceTree = "<group>"; };
 		B0CE12F1241AA0B100536923 /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
@@ -319,7 +319,7 @@
 		B0CE12E9241A9D4900536923 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
-				B0CE12EA241A9D5700536923 /* AuthorizeRequest.swift */,
+				B0CE12EA241A9D5700536923 /* AuthorizeAPIBayesRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -515,7 +515,7 @@
 				B0A39D4623EECAD700620F5B /* NewsViewController.swift in Sources */,
 				B0A39D2723EB1EFE00620F5B /* R.generated.swift in Sources */,
 				B04FB4FF23FEFDCF002D5B61 /* NewsImageView.swift in Sources */,
-				B0CE12EB241A9D5700536923 /* AuthorizeRequest.swift in Sources */,
+				B0CE12EB241A9D5700536923 /* AuthorizeAPIBayesRequest.swift in Sources */,
 				B0A39D3B23EEC5C400620F5B /* LocaleStorage.swift in Sources */,
 				B03A88D7241562EC00C5D6FE /* DetailNewsModel.swift in Sources */,
 				B0A39D2E23EB22BA00620F5B /* MainViewController.swift in Sources */,

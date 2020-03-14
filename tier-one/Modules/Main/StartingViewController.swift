@@ -16,8 +16,7 @@ final class StartingViewController: TOViewController {
     }
      
     @IBAction func buttonDidPress(_ sender: Any) {
-        API.shared.authorize()
-//        Navigation.shared.createTabBarViewController().push(clearBackStack: true)
+        Navigation.shared.createTabBarViewController().push(clearBackStack: true)
     }
     
 }

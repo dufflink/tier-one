@@ -30,7 +30,7 @@ final class API {
     // MARK: - Public Functions
     
     func authorize() -> Promise<Empty> {
-        let method = API.Method.authorize
+        let method = API.Method.authorizeAPIBayes
         return Promise(method)
     }
     

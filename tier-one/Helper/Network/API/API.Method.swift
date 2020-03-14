@@ -22,11 +22,11 @@ extension API {
     
     enum Method: TargetType {
         
-        case authorize
+        case authorizeAPIBayes
         
         var baseURL: URL {
             switch self {
-                case .authorize:
+                case .authorizeAPIBayes:
                     return URLConstants.baseURL
             }
         }
@@ -36,7 +36,7 @@ extension API {
             let version = "1"
             
             switch self {
-                case .authorize:
+                case .authorizeAPIBayes:
                     target = "auth"
             }
             
@@ -48,8 +48,8 @@ extension API {
             let parameters: [String: Any] = [:]
             
             switch self {
-                case .authorize:
-                    requestObject = AuthorizeRequest(username: "tieronemain@gmail.com", password: "6p2zyMHRRJZEfD2")
+                case .authorizeAPIBayes:
+                    requestObject = AuthorizeAPIBayesRequest(username: "tieronemain@gmail.com", password: "6p2zyMHRRJZEfD2")
             }
             
             if let requestObject = requestObject {
@@ -65,7 +65,7 @@ extension API {
         
         var method: Moya.Method {
             switch self {
-                case .authorize:
+                case .authorizeAPIBayes:
                     return .post
             }
         }

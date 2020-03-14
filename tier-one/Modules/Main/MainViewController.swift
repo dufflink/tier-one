@@ -12,8 +12,8 @@ final class MainViewController: TOViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        isFullScreen = true
         
+        isFullScreen = true
         pushToNextViewController()
     }
     
