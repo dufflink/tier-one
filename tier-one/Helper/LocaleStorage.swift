@@ -19,11 +19,19 @@ final class LocaleStorage {
     
     // MARK: - Encrypting Fields
     
-    var token: String? {
+    var bayesAccessToken: String? {
         get {
-            return getFromKeychain(forKey: "token")
+            return getFromKeychain(forKey: "bayesAccessToken")
         } set {
-            writeToKeychain(newValue, forKey: "token")
+            writeToKeychain(newValue, forKey: "bayesAccessToken")
+        }
+    }
+    
+    var bayesRefreshToken: String? {
+        get {
+            return getFromKeychain(forKey: "bayesRefreshToken")
+        } set {
+            writeToKeychain(newValue, forKey: "bayesRefreshToken")
         }
     }
     

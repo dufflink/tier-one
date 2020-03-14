@@ -29,7 +29,7 @@ final class API {
     
     // MARK: - Public Functions
     
-    func authorize() -> Promise<Empty> {
+    func authorizeAPIBayes() -> Promise<BayesAuthData> {
         let method = API.Method.authorizeAPIBayes
         return Promise(method)
     }
@@ -38,7 +38,6 @@ final class API {
         return provider.request(method) { response in
             switch response {
                 case .success(let response):
-                    
                     if let json = try? response.mapJSON(), let data = try? JSONSerialization.data(withJSONObject: json, options: .prettyPrinted) {
                         if let string = NSString(data: data, encoding: String.Encoding.utf8.rawValue) {
                             print(string)

@@ -46,6 +46,7 @@
 		B0CE12EE241A9FAA00536923 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CE12ED241A9FAA00536923 /* Promise.swift */; };
 		B0CE12F0241AA01A00536923 /* API.Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CE12EF241AA01A00536923 /* API.Error.swift */; };
 		B0CE12F2241AA0B100536923 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CE12F1241AA0B100536923 /* Empty.swift */; };
+		B0CE12F4241CE14700536923 /* BayesAuthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CE12F3241CE14700536923 /* BayesAuthData.swift */; };
 		E953ACFDE4ABA76AE22E72A8 /* Pods_tier_one.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F9A54122F8E2737A8A0089 /* Pods_tier_one.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +93,7 @@
 		B0CE12ED241A9FAA00536923 /* Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
 		B0CE12EF241AA01A00536923 /* API.Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.Error.swift; sourceTree = "<group>"; };
 		B0CE12F1241AA0B100536923 /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
+		B0CE12F3241CE14700536923 /* BayesAuthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BayesAuthData.swift; sourceTree = "<group>"; };
 		C132FED9F3DECD3DC795891D /* Pods-tier-one.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tier-one.debug.xcconfig"; path = "Target Support Files/Pods-tier-one/Pods-tier-one.debug.xcconfig"; sourceTree = "<group>"; };
 		DE7720BDECD1DC45F33728B1 /* Pods-tier-one.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tier-one.release.xcconfig"; path = "Target Support Files/Pods-tier-one/Pods-tier-one.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,6 +143,7 @@
 			children = (
 				B04FB504240127D3002D5B61 /* Discipline.swift */,
 				B04FB4FA23FEF8A9002D5B61 /* News.swift */,
+				B0CE12F3241CE14700536923 /* BayesAuthData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -533,6 +536,7 @@
 				B04FB4F823FEF71A002D5B61 /* NewsRow.swift in Sources */,
 				B0B9A04723EB1A5A0078D88C /* Navigation.swift in Sources */,
 				B0A39D3823EB29D100620F5B /* Constants.swift in Sources */,
+				B0CE12F4241CE14700536923 /* BayesAuthData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
